@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="icon" href="/images/favicon.png">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1 class="header__title">Todo App</h1>
+            <h2 class="header__subtitle">What do you need to do?</h2>
+        </div>    
+    </div>
+
+    <div class="actions">
+        <div class="actions__container">
+            <input type="text" id="search-todo" class="input" placeholder="Filter todos">
+            <label class="checkbox">
+                Hide completed:
+                <input type="checkbox" id="hide-completed">
+            </label>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="todos"></div>
+        <form id="add-todo">
+            <input type="text" class="input" placeholder="Enter your todo here" name="newTodo" >
+            <button class="button">Add Todo</button>
+        </form>
+    </div>
+
+    <script src="/scripts/index-bundle.js"></script>
+</body></html>
